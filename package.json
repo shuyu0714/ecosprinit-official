@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "swiper": "^11.1.14",
+    "v-slick-carousel": "^0.4.0",
     "vue": "^3.5.12"
   },
   "devDependencies": {

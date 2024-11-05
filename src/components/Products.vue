@@ -2,16 +2,15 @@
     <section>
         <div class="wrapper">
             <div class="mainProduct">
-                <Swiper 
-                    v-if="thumbsSwiper !== null"
+                <swiper-container
+                    :autoplay="true"
+                    :speed="500"
                     :loop="true"
                     :slides-per-view="1"
                     :centered-slides="true"
-                    :effect="coverflow"
-                    :modules="[EffectCoverflow]"
-                    :navigation="false"
+                    :pagination="paginationOptions"
                 >
-                    <SwiperSlide v-for="product in products" :key="product.id">
+                    <swiper-slide v-for="product in products" :key="product.id">
                         <div class="product d-flex align-items-md-start align-items-center">
                             <div class="name d-none d-md-block">
                                 <h2 class="zh">{{ product.name }}</h2>
@@ -30,8 +29,9 @@
                                 </div>
                             </div>
                         </div>
-                    </SwiperSlide>
-                </Swiper>
+                    </swiper-slide>
+                </swiper-container>
+                <div class="swiper-pagination"></div>
             </div>
             <div class="d-md-flex d-none">
                 <ul class="settingsList list-unstyled d-flex justify-content-between align-items-end">
@@ -56,10 +56,9 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import 'swiper/swiper-bundle.css';
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import { EffectCoverflow } from 'swiper/modules';
 
 const products = ref([
     { id: 1, image: '香燉嫩雞', name: '香燉嫩雞', en: 'chicken',  des: '單一肉源減少毛孩過敏機率，餐包添加蜂王胎、火龍果，提升抵抗力、促進腸道蠕動及平衡健康菌叢' },
@@ -67,6 +66,14 @@ const products = ref([
     { id: 3, image: '極鮮烏魚', name: '極鮮烏魚', en: 'mullet',  des: '單一肉源減少毛孩過敏機率，餐包添加蜂王胎、火龍果，提升抵抗力、促進腸道蠕動及平衡健康菌叢' },
     { id: 4, image: '水針虱目魚', name: '水針 & 虱目魚', en: 'Needlefish & Milkfish',  des: '單一肉源減少毛孩過敏機率，餐包添加蜂王胎、火龍果，提升抵抗力、促進腸道蠕動及平衡健康菌叢' },
 ])
+
+const paginationOptions = {
+    el: '.swiper-pagination',
+    clickable: true,
+    renderBullet: (index, className) => {
+        return `<span class="${className}" style="width: 14px; height: 14px; background: no-repeat center / 100% url('/ecosprint-official/src/assets/images/icon/icon-pagin.svg');"></span>`;
+    }
+};
 
 </script>
 
@@ -81,6 +88,9 @@ $color1: #808080;
 $color2: #F3994F;
 $color3: #555555;
 
+.swiper-pagination {
+    bottom: -15%;
+}
 section {
     overflow: hidden;
     background-color: $bg;
@@ -121,12 +131,20 @@ section {
             font-size: clamp(20px, 1.875vw, 36px);
             font-weight: 900;
             color: $color1;
+            @media screen and (max-width: 767px) {
+                font-size: min(18px, 5.34vw);
+                margin-bottom: 2px;
+            }
         }
         .en {
-            font-size: clamp(16px, 1.67vw, 32px);
+            font-size: clamp(17px, 1.67vw, 32px);
             font-weight: 500;
             color: $color2;
             text-transform: uppercase;
+            @media screen and (max-width: 767px) {
+                font-size: min(16px, 4.8vw);
+                margin-bottom: 16px;
+            }
         }
     }
     .cover {
@@ -154,6 +172,9 @@ section {
             color: $color3;
             font-size: 20px;
             font-size: clamp(16px, 1.04167vw, 20px);
+            @media screen and (max-width: 767px) {
+                font-size: clamp(14px, 1.04167vw, 20px);
+            }
         }
     }
     @media screen and (max-width: 767px) {

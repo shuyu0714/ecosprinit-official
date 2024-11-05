@@ -6,7 +6,7 @@
                     <div class="ratio ratio-1x1">
                         <img :src="`/ecosprint-official/images/4_ingredient/${ingredient.image}`" />
                     </div>
-                    <h3 class="text-center mb-2">{{ ingredient.name }}</h3>
+                    <h3 class="text-center mb-1">{{ ingredient.name }}</h3>
                     <p>{{ ingredient.des }}</p>
                 </div>
             </div>
@@ -41,7 +41,10 @@ section {
         width: 75vw;
         margin: auto;
         @media screen and (max-width: 768px) {
-            width: 86.4%;
+            width: 75%;
+        }
+        @media screen and (max-width: 576px) {
+            width: 89.4%;
         }
     }
 }
@@ -53,6 +56,10 @@ section {
         grid-template-columns: repeat(3, 28.3252%);
     }
     @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8vw 4.5%;
+    }
+    @media screen and (max-width: 576px) {
         grid-template-columns: repeat(2, 1fr);
         gap: 8vw 7.41%;
     }
@@ -70,12 +77,13 @@ section {
     .ratio {
         width: 86.0656%;
         margin: auto;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 576px) {
             width: 28vw;
         }
     }
     h3 {
         font-size: 24px;
+        font-weight: 900;
         color: #666;
         @media screen and (max-width: 768px) {
             font-size: 17px;
@@ -83,10 +91,11 @@ section {
     }
     p {
         font-size: 16px;
+        text-align: justify;
         margin-bottom: 0;
         color: #555;
         @media screen and (max-width: 768px) {
-            font-size: 15px
+            font-size: 14px
         }
     }
 }

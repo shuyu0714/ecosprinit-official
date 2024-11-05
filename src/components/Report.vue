@@ -1,7 +1,7 @@
 <template>
     <section class="d-flex justify-content-center">
         <a class="d-flex justify-content-center" href="/" target="_blank" rel="noopener">
-            <img class="img-fluid" src="../assets/images/img/img-report.svg" />
+            <img class="img-fluid" src="../assets/images/img/img-report.png" />
         </a>
         <div class="holder"></div>
     </section>
@@ -19,9 +19,13 @@ section {
 }
 img {
     width: 51.04167vw;
-    max-width: 720px;
+    // max-width: 720px;
     @media screen and (max-width: 767px) {
+        width: 86vw;
+    }
+    @media screen and (max-width: 567px) {
         width: 96vw;
+        margin-right: -13px;
     }
 }
 .holder {

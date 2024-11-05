@@ -38,8 +38,11 @@ section {
         padding: 43px 0 52px;
     }
     .wrapper {
-        width: 86.97916%;
+        width: 70.521%;
         margin: auto;
+        @media screen and (max-width: 1199px) {
+            width: 86.134vw;
+        }
         @media screen and (max-width: 767px) {
             width: 90.134vw;
         }
@@ -50,7 +53,8 @@ section {
     align-items: flex-start;
     @media screen and (min-width: 768px) {
         grid-template-columns: repeat(3, 28.3252%);
-        gap: 2.916667vw 0;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0 4.17vw;
     }
     @media screen and (max-width: 767px) {
         grid-template-columns: 1fr;
@@ -61,6 +65,7 @@ section {
     $total: 3;
     position: relative;
     padding: 2.604167vw 2.86458vw 16.6667vw;
+    padding: 2.604167vw 2.86458vw 14.6667vw;
     border-top-right-radius: 80px;
     flex-direction: column;
     justify-content: space-between;
@@ -77,6 +82,9 @@ section {
             }
         }
     }
+    @media screen and (max-width: 1199px) {
+        padding-bottom: 21.6667vw;
+    }
     @media screen and (max-width: 767px) {
         border-top-right-radius: 0;
         border-top-left-radius: 36px;
@@ -84,11 +92,15 @@ section {
         padding: 8vw 20.5333vw 9.6vw 7.47vw;
         width: 82.841%;
     }
+    @media screen and (max-width: 576px) {
+        padding: 6.4vw 20.5333vw 4.8vw 7.47vw;
+    }
     .ratio {
         width: calc(100% - 2.86458vw - 2.86458vw);
         position: absolute;
         right: 0;
-        bottom: -7vw;
+        // bottom: -7vw;
+        bottom: -4.5vw;
         // margin-left: 2.86458vw;
         &::before {
             padding-top: 123.809%;
@@ -97,10 +109,13 @@ section {
             }
         }
         @media screen and (max-width: 767px) {
-            width: 48.575%;
-            right: -23%;
-            // bottom: 50%;
-            // transform: translateY(50%);
+            width: 44.575%;
+            max-width: 220px;
+            right: -20.75%;
+        }
+        @media screen and (max-width: 576px) {
+            right: -21%;
+            max-width: 150px;
         }
     }
     h4 {
@@ -112,19 +127,19 @@ section {
         @media screen and (max-width: 767px) {
             font-size: 18px;
         }
-        @media screen and (max-width: 575px) {
-            font-size: 14px;
+        @media screen and (max-width: 576px) {
+            font-size: 16px;
         }
     }
     h3 {
         font-size: 36px;
-        font-size: clamp(22px, 1.875vw, 36px);
+        font-size: clamp(22px, 1.67vw, 32px);
         font-weight: 700;
         color: $head-color;
         @media screen and (max-width: 767px) {
             font-size: 22px;
         }
-        @media screen and (max-width: 575px) {
+        @media screen and (max-width: 576px) {
             font-size: 17px;
         }
     }
@@ -136,8 +151,8 @@ section {
         @media screen and (max-width: 767px) {
             font-size: 16px;
         }
-        @media screen and (max-width: 575px) {
-            font-size: 11px;
+        @media screen and (max-width: 576px) {
+            font-size: 14px;
         }
     }
 }

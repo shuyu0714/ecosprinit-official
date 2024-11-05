@@ -3,7 +3,7 @@
         <VSlickCarousel v-bind="settings">
             <div>
                 <div class="ratio ratio-pc d-none d-md-block">
-                    <img src="../assets/images/img/banner/img-banner1.jpeg" class="img-fluid" densities="x1" alt="EcoSprint 奔奔 Logo" />
+                    <img src="../assets/images/img/banner/img-banner1.jpg" class="img-fluid" densities="x1" alt="EcoSprint 奔奔 Logo" />
                 </div>
                 <div class="ratio ratio-mb d-md-none">
                     <img src="../assets/images/img/banner/img-banner1_mb.jpg" class="img-fluid" densities="x1" alt="EcoSprint 奔奔 Logo" />

@@ -8,8 +8,8 @@
                     <div class="info">
                         <div>統一編號 | 96807616</div>
                         <div>地址 | 新北市新店區安興路45巷2號</div>
-                        <div>電話 | <NuxtLink to="tel:+02-77287761">02-77287761</NuxtLink></div>
-                        <div>聯絡信箱 | <NuxtLink to="mailto:service@greentailpet.com">service@greentailpet.com</NuxtLink></div>
+                        <div>電話 | <a href="tel:+02-77287761">02-77287761</a></div>
+                        <div>聯絡信箱 | <a href="mailto:service@greentailpet.com">service@greentailpet.com</a></div>
                     </div>
                 </div>
             </div>

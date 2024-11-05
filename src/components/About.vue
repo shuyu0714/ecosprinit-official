@@ -6,7 +6,7 @@
                     <img src="../assets/images/icon/logo-ecosprint-green.svg" class="img-fluid" alt="EcoSprint 奔奔 Logo" />
                     <h1 class="text-primary">生態友善寵食</h1>
                     <div class="slogan">
-                        <img src="../assets/images/img/img-slogan.svg" class="img-fluid" alt="EcoSprint 奔奔 - 關懷土地、寵愛毛孩，這份愛永續不停歇" />
+                        <img src="../assets/images/img/img-slogan.png" class="img-fluid" alt="EcoSprint 奔奔 - 關懷土地、寵愛毛孩，這份愛永續不停歇" />
                     </div>
                 </div>
                 <div class="ecosprint-intro text-justify">
@@ -31,7 +31,7 @@ $text-color: #555555;
 section {
     padding: 120px 0 64px;
     @media screen and (max-width: 767px) {
-        padding: 38px 0 32px;
+        padding: 34px 0 40px;
     }
     .wrapper {
         width: 90.67%;
@@ -60,20 +60,20 @@ section {
     }
     .ecosprint-brand {
         @media screen and (max-width: 767px) {
-            width: 48.675%;
             margin: auto;
         }
         > img {
             width: 15.3125vw;
             @media screen and (max-width: 767px) {
-                width: 115px;
+                width: auto;
+                height: clamp(60px, 16vw, 80px);
             }
         }
         .slogan {
             img {
                 width: 20.834vw;
                 @media screen and (max-width: 767px) {
-                    width: 165px;
+                    width: clamp(220px, 58.67vw, 300px);
                 }
             }
         }
@@ -81,24 +81,23 @@ section {
     .ecosprint-intro {
         color: $text-color;
         @media screen and (max-width: 767px) {
-            // width: 67.059%;
-            width: 90.059%;
-            margin: 16px auto 0;
+            width: 74.67vw;
+            margin: 32px auto 0;
         }
     }
     h1 {
         font-size: 48px;
         font-weight: 900;
         margin: 24px 0 28px;
-        font-size: clamp(36px, 2.5vw, 48px);
+        font-size: clamp(34px, 2.5vw, 48px);
         @media screen and (max-width: 767px) {
-            // font-size: clamp(24px, 6.4vw, 28px);
-            font-size: 24px;
+            font-size: 32px;
             margin: 10px 0 16px;
         }
     }
     p { 
         font-size: clamp(16px, 1.04167vw, 20px);
+        text-align: justify;
         @media screen and (max-width: 767px) {
             font-size: 15px;
         }

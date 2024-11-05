@@ -2,7 +2,7 @@
     <footer>
         <div class="wrapper d-grid justify-content-md-between">
             <div class="brand d-flex justify-content-md-between align-items-center">
-                <img class="logo img-fluid" src="../assets/images/icon/logo-ecosprint-h.svg" alt="EcoSprint 奔奔 Logo" />
+                <img class="logo img-fluid" src="../assets/images/icon/logo-ecosprint-h.png" alt="EcoSprint 奔奔 Logo" />
                 <div class="company">
                     <h2 class="name mb-md-4 mb-2">綠尾有限公司</h2>
                     <div class="info">
@@ -42,6 +42,9 @@ footer {
     background-color: var(--bs-primary);
     color: var(--bs-white);
     padding: 3.64583vw;
+    @media screen and (max-width: 767px) {
+        padding: 27px 0 20px
+    }
     .wrapper {
         width: 84.11458%;
         margin: auto;
@@ -82,15 +85,16 @@ footer {
             }
         }
         .info {
-            font-size: clamp(15px, 1.04167vw, 20px);
-            
+            font-size: clamp(14px, 1.04167vw, 20px);
+            line-height: 1.5;
+            margin-top: 10px;
         }
     }
 }
 .info {
     @media screen and (max-width: 767px) {
         align-items: center;
-        margin-top: 30px;
+        margin-top: 20px;
     }
     .social {
         gap: 0 1.6667vw;

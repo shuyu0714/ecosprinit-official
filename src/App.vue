@@ -8,6 +8,7 @@
     <Traceability />
     <Report />
     <Footer />
+    <Fixed />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import Ingredient from './components/Ingredient.vue';
 import Traceability from './components/Traceability.vue';
 import Report from './components/Report.vue';
 import Footer from './components/Footer.vue';
+import Fixed from './components/Fixed.vue';
 </script>
 
 <style scoped>

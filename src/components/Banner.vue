@@ -2,12 +2,8 @@
     <div class="carousel w-100">
         <VSlickCarousel v-bind="settings">
             <div>
-                <div class="ratio ratio-pc d-none d-md-block">
-                    <img src="../assets/images/img/banner/img-banner1.jpg" class="img-fluid" densities="x1" alt="EcoSprint 奔奔 Logo" />
-                </div>
-                <div class="ratio ratio-mb d-md-none">
-                    <img src="../assets/images/img/banner/img-banner1_mb.jpg" class="img-fluid" densities="x1" alt="EcoSprint 奔奔 Logo" />
-                </div>
+                <img src="../assets/images/img/banner/img-banner1.jpg" class="img-fluid d-none d-md-block" densities="x1" alt="EcoSprint 奔奔 Logo" />
+                <img src="../assets/images/img/banner/img-banner1_mb.jpg" class="img-fluid ratio-mb d-md-none" densities="x1" alt="EcoSprint 奔奔 Logo" />
             </div>
         </VSlickCarousel>
     </div>
@@ -25,18 +21,18 @@ const settings = {
 </script>
 
 <style scoped lang="scss">
-.ratio-pc {
-    &::before {
-        padding-top: 44.271%;
-    }
-    img {
-        object-fit: cover;
-        object-position: center;
-    }
-}
-.ratio-mb {
-    &::before {
-        padding-top: 86.67%;
-    }
-}
+// .ratio-pc {
+//     &::before {
+//         padding-top: 44.271%;
+//     }
+//     img {
+//         object-fit: cover;
+//         object-position: center;
+//     }
+// }
+// .ratio-mb {
+//     &::before {
+//         padding-top: 86.67%;
+//     }
+// }
 </style>

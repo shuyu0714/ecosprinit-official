@@ -71,7 +71,7 @@ const paginationOptions = {
     el: '.swiper-pagination',
     clickable: true,
     renderBullet: (index, className) => {
-        return `<span class="${className}" style="width: 14px; height: 14px; background: no-repeat center / 100% url('/ecosprint-official/assets/images/icon/icon-pagin.svg');"></span>`;
+        return `<span class="${className}" style="width: 14px; height: 14px; background: no-repeat center / 100% url('/ecosprint-official/src/assets/images/icon/icon-pagin.svg');"></span>`;
     }
 };
 

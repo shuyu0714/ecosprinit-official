@@ -83,7 +83,7 @@ section {
     }
     h3 {
         font-size: 24px;
-        font-weight: 900;
+        font-weight: 700;
         color: #666;
         @media screen and (max-width: 768px) {
             font-size: 17px;

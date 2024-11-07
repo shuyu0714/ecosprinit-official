@@ -16,18 +16,18 @@
             <div class="info d-flex flex-column justify-content-md-between">
                 <div class="social d-inline-flex justify-content-md-end">
                     <div class="item">
-                        <a class="d-block" href="https://www.facebook.com/ecosprint2024" target="_blank" rel="noopener noreferrer">
-                            <img class="img-fluid" src="../assets/images/icon/icon-fb.svg" alt="facebook icon link" />
+                        <a class="d-block h-100" href="https://www.facebook.com/ecosprint2024" target="_blank" rel="noopener noreferrer">
+                            <div class="icon h-100 facebook"></div><!-- <img class="img-fluid" src="../assets/images/icon/icon-fb.svg" alt="facebook icon link" /> -->
                         </a>
                     </div>
                     <div class="item">
-                        <a class="d-block" href="https://www.instagram.com/ecosprintpet" target="_blank" rel="noopener noreferrer">
-                            <img class="img-fluid" src="../assets/images/icon/icon-ig.svg" alt="instagram icon link" />
+                        <a class="d-block h-100" href="https://www.instagram.com/ecosprintpet" target="_blank" rel="noopener noreferrer">
+                            <div class="icon h-100 instagram"></div><!-- <img class="img-fluid" src="../assets/images/icon/icon-ig.svg" alt="instagram icon link" /> -->
                         </a>
                     </div>
                     <div class="item">
-                        <a class="d-block" href="" target="_blank" rel="noopener noreferrer">
-                            <img class="img-fluid" src="../assets/images/icon/icon-line.svg" alt="line icon link" />
+                        <a class="d-block h-100" href="" target="_blank" rel="noopener noreferrer">
+                            <div class="icon h-100 line"></div><!-- <img class="img-fluid" src="../assets/images/icon/icon-line.svg" alt="line icon link" /> -->
                         </a>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
 footer {
     background-color: var(--bs-primary);
     color: var(--bs-white);
-    padding: 3.64583vw;
+    padding: 3.125vw 3.64583vw;
     @media screen and (max-width: 767px) {
         padding: 27px 0 20px
     }
@@ -51,6 +51,7 @@ footer {
         grid-template-columns: max-content auto;
         @media screen and (max-width: 767px) {
             grid-template-columns: 1fr;
+            max-width: 316px;
         }
         a { 
             color: var(--bs-white);
@@ -60,15 +61,19 @@ footer {
 }
 .brand {
     @media screen and (max-width: 767px) {
-        justify-content: center;
+        justify-content: space-between;
     }
     .logo {
-        width: clamp(55px, 7.0834vw, 136px);
-        margin-right: 22px;
+        width: clamp(55px, 7.0834vw, 105px);
+        margin-right: 2.5vw;
+        @media screen and (max-width: 767px) {
+            margin-right: 8px;
+            width: clamp(60px, 7.0834vw, 105px);
+        }
     }
     .company {
         .name {
-            font-size: clamp(18px, 1.6667vw, 32px);
+            font-size: clamp(18px, 1.25vw, 24px);
             &::after {
                 content: '';
                 display: block;
@@ -85,9 +90,12 @@ footer {
             }
         }
         .info {
-            font-size: clamp(14px, 1.04167vw, 20px);
-            line-height: 1.5;
+            font-size: clamp(14px, .834vw, 16px);
+            line-height: 1.9;
             margin-top: 10px;
+            @media screen and (max-width: 767px) {
+                font-size: 13px;
+            }
         }
     }
 }
@@ -98,9 +106,8 @@ footer {
     }
     .social {
         gap: 0 1.6667vw;
-        // border-bottom: 2px solid var(--bs-white);
         position: relative;
-        padding-bottom: 1.6667vw;
+        padding-bottom: 1.25vw;
         &::after {
             content: '';
             display: block;
@@ -109,15 +116,37 @@ footer {
             background-color: var(--bs-white);
             position: absolute;
             bottom: 0;
-            width: 13.3vw;
+            width: 10.8vw;
             @media screen and (max-width: 767px) {
                 width: 100%;
             }
         }
         .item {
-            width: 3.333vw;
+            width: 2.5vw;
+            height: 2.5vw;
+            min-width: 36px;
+            min-height: 36px;
             @media screen and (max-width: 767px) {
                 width: 32px;
+                height: 32px;
+            }
+            .icon {
+                width: 100%;
+                height: 100%;
+                transition: all .25s;
+                &:hover {
+                    filter: opacity(25%);
+                    transition: all .25s;
+                }
+                &.facebook {
+                    background: no-repeat center / 100% url(../assets/images/icon/icon-fb.svg);
+                }
+                &.instagram {
+                    background: no-repeat center / 100% url(../assets/images/icon/icon-ig.svg);
+                }
+                &.line {
+                    background: no-repeat center / 100% url(../assets/images/icon/icon-line.svg);
+                }
             }
         }
         @media screen and (max-width: 767px) {
@@ -127,7 +156,7 @@ footer {
         }
     }
     .copyright {
-        font-size: clamp(12px, .8333vw, 16px);
+        font-size: clamp(12px, .782vw, 15px);
     }
 }
 </style> 

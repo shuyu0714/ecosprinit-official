@@ -1,13 +1,15 @@
 <template>
   <div>
     <Header />
-    <Banner />
-    <Products />
-    <About />
-    <Ingredient />
-    <Traceability />
-    <Report />
-    <Footer />
+    <main>
+      <Banner />
+      <Products />
+      <About />
+      <Ingredient />
+      <Traceability />
+      <Report />
+      <Footer />
+    </main>
     <Fixed />
   </div>
 </template>
@@ -24,5 +26,6 @@ import Footer from './components/Footer.vue';
 import Fixed from './components/Fixed.vue';
 </script>
 
-<style scoped>
+<style lang="scss">
+
 </style>

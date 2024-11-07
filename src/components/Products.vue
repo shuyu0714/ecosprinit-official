@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="index-products">
         <div class="wrapper">
             <div class="mainProduct">
                 <swiper-container
@@ -11,7 +11,7 @@
                     :pagination="paginationOptions"
                 >
                     <swiper-slide v-for="product in products" :key="product.id">
-                        <div class="product d-flex align-items-md-start align-items-center">
+                        <div class="product d-flex align-items-md-start align-items-sm-center">
                             <div class="name d-none d-md-block">
                                 <h2 class="zh">{{ product.name }}</h2>
                                 <h2 class="en">{{ product.en }}</h2>
@@ -71,13 +71,13 @@ const paginationOptions = {
     el: '.swiper-pagination',
     clickable: true,
     renderBullet: (index, className) => {
-        return `<span class="${className}" style="width: 14px; height: 14px; background: no-repeat center / 100% url('/ecosprint-official/src/assets/images/icon/icon-pagin.svg');"></span>`;
+        return `<span class="${className}" style="width: 14px; height: 14px;"></span>`;
     }
 };
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "swiper/css";
 
 @import "swiper/css/free-mode";
@@ -89,9 +89,21 @@ $color2: #F3994F;
 $color3: #555555;
 
 .swiper-pagination {
-    bottom: -15%;
+    bottom: -80px!important;
+    @media screen and (max-width: 767px) {
+        text-align: right;
+        padding-right: 32px;
+        bottom: -20px!important;
+    }
+    > span {
+        opacity: 1;
+        background: no-repeat center / 100% url('../assets/images/icon/icon-pagin.svg');
+        &.swiper-pagination-bullet-active {
+            background: no-repeat center / 100% url('../assets/images/icon/icon-pagin-active.svg');
+        }
+    }
 }
-section {
+.index-products {
     overflow: hidden;
     background-color: $bg;
     padding: 133px 0;

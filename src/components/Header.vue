@@ -31,6 +31,12 @@
 
 <style lang="scss" scoped>
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: inherit;
     background-color: var(--bs-primary);
     color: var(--bs-white);
 }

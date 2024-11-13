@@ -3,24 +3,24 @@
         <nav class="navbar">
             <div class="d-flex flex-column flex-md-row align-items-center">
                 <a class="navbar-brand" href="/">
-                    <img src="../assets/images/icon/logo-ecosprint.svg" width="120" height="48" alt="EcoSprint 奔奔 Logo" />
+                    <img src="../assets/images/icon/logo-ecosprint.svg" width="120" height="48" alt="EcoSprint 奔奔 Logo" title="EcoSprint 奔奔" />
                 </a>
                 <div class="navbar-collapse">
                     <ul class="navbar-nav d-flex align-items-center list-unstyled mb-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">關於奔奔</a>
+                            <a class="nav-link active" href="#about">關於奔奔</a>
                         </li>
                         <img src="../assets/images/icon/icon-slash.svg" class="slash" width="8" height="24" alt="" />
                         <li class="nav-item">
-                            <a class="nav-link" href="#">果肉泥餐包</a>
+                            <a class="nav-link" href="#products">果肉泥餐包</a>
                         </li>
                         <img src="../assets/images/icon/icon-slash.svg" class="slash" width="8" height="24" alt="" />
                         <li class="nav-item">
-                            <a class="nav-link" href="#">檢驗報告</a>
+                            <a class="nav-link" href="#report">檢驗報告</a>
                         </li>
                         <img src="../assets/images/icon/icon-slash.svg" class="slash" width="8" height="24" alt="" />
                         <li class="nav-item">
-                            <a class="nav-link" href="#">食材溯源</a>
+                            <a class="nav-link" href="#traceability">食材溯源</a>
                         </li>
                     </ul>
                 </div>

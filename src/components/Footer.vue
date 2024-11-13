@@ -2,7 +2,7 @@
     <footer>
         <div class="wrapper d-grid justify-content-md-between">
             <div class="brand d-flex justify-content-md-between align-items-center">
-                <img class="logo img-fluid" src="../assets/images/icon/logo-ecosprint-h.png" alt="EcoSprint 奔奔 Logo" />
+                <img class="logo img-fluid" src="../assets/images/icon/logo-ecosprint-h.png" alt="EcoSprint 奔奔 Logo" title="EcoSprint 奔奔" />
                 <div class="company">
                     <h2 class="name mb-md-4 mb-2">綠尾有限公司</h2>
                     <div class="info">
@@ -17,17 +17,17 @@
                 <div class="social d-inline-flex justify-content-md-end">
                     <div class="item">
                         <a class="d-block h-100" href="https://www.facebook.com/ecosprint2024" target="_blank" rel="noopener noreferrer">
-                            <div class="icon h-100 facebook"></div><!-- <img class="img-fluid" src="../assets/images/icon/icon-fb.svg" alt="facebook icon link" /> -->
+                            <div class="icon h-100 facebook text-indent">Facebook</div>
                         </a>
                     </div>
                     <div class="item">
                         <a class="d-block h-100" href="https://www.instagram.com/ecosprintpet" target="_blank" rel="noopener noreferrer">
-                            <div class="icon h-100 instagram"></div><!-- <img class="img-fluid" src="../assets/images/icon/icon-ig.svg" alt="instagram icon link" /> -->
+                            <div class="icon h-100 instagram text-indent">Instagram</div>
                         </a>
                     </div>
                     <div class="item">
                         <a class="d-block h-100" href="" target="_blank" rel="noopener noreferrer">
-                            <div class="icon h-100 line"></div><!-- <img class="img-fluid" src="../assets/images/icon/icon-line.svg" alt="line icon link" /> -->
+                            <div class="icon h-100 line text-indent">Line</div>
                         </a>
                     </div>
                 </div>

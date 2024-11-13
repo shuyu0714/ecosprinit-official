@@ -1,5 +1,5 @@
 <template>
-    <section class="index-products">
+    <section class="index-products" id="products">
         <div class="wrapper">
             <div class="mainProduct">
                 <swiper-container
@@ -17,7 +17,7 @@
                                 <h2 class="en">{{ product.en }}</h2>
                             </div>
                             <div class="cover ratio">
-                                <img class="img-fluid" :src="`/ecosprint-official/images/2_products/img-product-${product.image}.png`" />
+                                <img class="img-fluid" :src="`/ecosprint-official/images/2_products/img-product-${product.image}.png`" :alt="`果肉泥主食餐包 - ${product.name}`" :title="`果肉泥主食餐包 - ${product.name}`" />
                             </div>
                             <div>
                                 <div class="name d-md-none">
@@ -46,7 +46,7 @@
                     <li class="product d-flex align-items-start justify-content-center"
                         v-for="product in products" :key="product.id">
                         <div class="cover ratio">
-                            <img class="img-fluid" :src="`/ecosprint-official/images/2_products/img-product-${product.image}.png`" />
+                            <img class="img-fluid" :src="`/ecosprint-official/images/2_products/img-product-${product.image}.png`" :title="`果肉泥主食餐包 - ${product.name}`" />
                         </div>
                     </li>
                 </ul>

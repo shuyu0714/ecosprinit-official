@@ -4,7 +4,7 @@
             <div class="ingredient-list d-grid">
                 <div class="ingredient-item" v-for="ingredient in ingredients" :key="ingredient">
                     <div class="ratio ratio-1x1">
-                        <img :src="`/ecosprint-official/images/4_ingredient/${ingredient.image}`" />
+                        <img :src="`/ecosprint-official/images/4_ingredient/${ingredient.image}`" :alt="ingredient.name" :title="ingredient.name" />
                     </div>
                     <h3 class="text-center mb-1">{{ ingredient.name }}</h3>
                     <p>{{ ingredient.des }}</p>

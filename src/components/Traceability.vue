@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="traceability">
         <PageHead title="食材溯源" />
         <div class="wrapper mt-md-0 mt-4">
             <div class="trace-list d-grid">
@@ -10,7 +10,7 @@
                         <p>{{ trace.des }}</p>
                     </div>
                     <div class="ratio">
-                        <img :src="`/ecosprint-official/images/5_trace/${trace.image}`" />
+                        <img :src="`/ecosprint-official/images/5_trace/${trace.image}`" :alt="trace.name" :title="trace.name" />
                     </div>
                 </div>
             </div>

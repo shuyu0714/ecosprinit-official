@@ -1,8 +1,8 @@
 <template>
     <div class="btn-fixed">
         <a href="https://www.zeczec.com/projects/ecosprint?r=d194731401329" target="_blank">
-            <img class="img-fluid d-none d-md-block" src="../assets/images/icon/icon-fixed.png" alt="嘖嘖募資中(另開視窗)">
-            <img class="img-fluid d-md-none" src="../assets/images/icon/icon-fixed-mb.png" alt="嘖嘖募資中(另開視窗)">
+            <img class="img-fluid d-none d-md-block" src="../assets/images/icon/icon-fixed.png" alt="嘖嘖募資中(另開視窗)" title="嘖嘖募資中">
+            <img class="img-fluid d-md-none" src="../assets/images/icon/icon-fixed-mb.png" alt="嘖嘖募資中(另開視窗)" title="嘖嘖募資中">
         </a>
     </div>
 </template>

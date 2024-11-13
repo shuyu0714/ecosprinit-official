@@ -26,7 +26,7 @@
                         </a>
                     </div>
                     <div class="item">
-                        <a class="d-block h-100" href="" target="_blank" rel="noopener noreferrer">
+                        <a class="d-block h-100" href="https://line.me/ti/p/~@ecosprint" target="_blank" rel="noopener noreferrer">
                             <div class="icon h-100 line text-indent">Line</div>
                         </a>
                     </div>

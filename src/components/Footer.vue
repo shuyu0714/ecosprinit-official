@@ -2,7 +2,7 @@
     <footer>
         <div class="wrapper d-grid justify-content-md-between">
             <div class="brand d-flex justify-content-md-between align-items-center">
-                <img class="logo img-fluid" src="../assets/images/icon/logo-ecosprint-h.png" alt="EcoSprint 奔奔 Logo" title="EcoSprint 奔奔" />
+                <img class="logo img-fluid" src="../assets/images/icon/logo-ecosprint-h.png" alt="Eco Sprint 奔奔 Logo" title="Eco Sprint 奔奔" />
                 <div class="company">
                     <h2 class="name mb-md-4 mb-2">綠尾有限公司</h2>
                     <div class="info">

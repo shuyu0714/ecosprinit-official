@@ -3,7 +3,7 @@
         <nav class="navbar">
             <div class="d-flex flex-column flex-md-row align-items-center">
                 <a class="navbar-brand" href="/">
-                    <img src="../assets/images/icon/logo-ecosprint.svg" width="120" height="48" alt="EcoSprint 奔奔 Logo" title="EcoSprint 奔奔" />
+                    <img src="../assets/images/icon/logo-ecosprint.svg" width="120" height="48" alt="Eco Sprint 奔奔 Logo" title="Eco Sprint 奔奔" />
                 </a>
                 <div class="navbar-collapse">
                     <ul class="navbar-nav d-flex align-items-center list-unstyled mb-0">

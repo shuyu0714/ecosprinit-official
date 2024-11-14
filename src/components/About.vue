@@ -3,10 +3,10 @@
         <div class="wrapper">
             <div class="about-ecosprint d-grid align-items-center">
                 <div class="ecosprint-brand text-center">
-                    <img src="../assets/images/icon/logo-ecosprint-green.svg" class="img-fluid" alt="EcoSprint 奔奔 Logo" title="EcoSprint 奔奔" />
+                    <img src="../assets/images/icon/logo-ecosprint-green.svg" class="img-fluid" alt="Eco Sprint 奔奔 Logo" title="Eco Sprint 奔奔" />
                     <h1 class="text-primary">生態友善寵食</h1>
                     <div class="slogan">
-                        <img src="../assets/images/img/img-slogan.png" class="img-fluid" alt="EcoSprint 奔奔 - 關懷土地、寵愛毛孩，這份愛永續不停歇" title="EcoSprint 奔奔 - 關懷土地、寵愛毛孩，這份愛永續不停歇" />
+                        <img src="../assets/images/img/img-slogan.png" class="img-fluid" alt="Eco Sprint 奔奔 - 關懷土地、寵愛毛孩，這份愛永續不停歇" title="Eco Sprint 奔奔 - 關懷土地、寵愛毛孩，這份愛永續不停歇" />
                     </div>
                 </div>
                 <div class="ecosprint-intro text-justify">
@@ -18,7 +18,7 @@
                     </p>
                 </div>
             </div>
-            <img src="../assets/images/img/img-about.svg" class="img-fluid w-100" alt="EcoSprint 奔奔 Logo" title="EcoSprint 奔奔" />
+            <img src="../assets/images/img/img-about.svg" class="img-fluid w-100" alt="Eco Sprint 奔奔 Logo" title="Eco Sprint 奔奔" />
         </div>
     </section>
 </template>

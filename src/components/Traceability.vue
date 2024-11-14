@@ -10,7 +10,7 @@
                         <p>{{ trace.des }}</p>
                     </div>
                     <div class="ratio">
-                        <img :src="`/ecosprint-official/images/5_trace/${trace.image}`" :alt="trace.name" :title="trace.name" />
+                        <img :src="`/images/5_trace/${trace.image}`" :alt="trace.name" :title="trace.name" />
                     </div>
                 </div>
             </div>

@@ -5,7 +5,7 @@ import viteImagemin from 'vite-plugin-imagemin'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/ecosprint-official/",
+  base: "/",
   plugins: [
     vue({
       template: {

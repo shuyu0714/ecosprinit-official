@@ -62,8 +62,8 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 
 const products = ref([
     { id: 1, image: '香燉嫩雞', name: '香燉嫩雞', en: 'chicken',  des: '<b>單一肉源｜過敏食材OUT</b><br/>國產優質雞肉，高蛋白低脂，提供貓咪運動營養，寵物接受度 No.1' },
-    { id: 2, image: '白帶魚雞肉', name: '白帶魚 & 雞肉', en: 'Hairtail & Chicken',  des: '<b>單一肉源｜過敏食材OUT</b><br/>梓官漁會來源烏魚殼，油脂豐富，有益皮毛健康，喜歡海鮮的貓貓必吃' },
-    { id: 3, image: '極鮮烏魚', name: '極鮮烏魚', en: 'mullet',  des: '<b>雙重口味｜肉肉吃不膩</b><br/>新港漁會白帶魚及國產優質雞肉，富含 BCAA、Omega-3，一次享受海陸大餐' },
+    { id: 2, image: '白帶魚雞肉', name: '白帶魚 & 雞肉', en: 'Hairtail & Chicken',  des: '<b>雙重口味｜肉肉吃不膩</b><br/>新港漁會白帶魚及國產優質雞肉，富含 BCAA、Omega-3，一次享受海陸大餐' },
+    { id: 3, image: '極鮮烏魚', name: '極鮮烏魚', en: 'mullet',  des: '<b>單一肉源｜過敏食材OUT</b><br/>梓官漁會來源烏魚殼，油脂豐富，有益皮毛健康，喜歡海鮮的貓貓必吃' },
     { id: 4, image: '水針虱目魚', name: '水針 & 虱目魚', en: 'Needlefish & Milkfish',  des: '<b>雙重口味｜肉肉吃不膩</b><br/>新港漁會水針（鶴鱵）及國產虱目魚，內含豐富不飽和脂肪酸，海味濃郁' },
 ])
 

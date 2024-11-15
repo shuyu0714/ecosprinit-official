@@ -25,7 +25,7 @@
                                     <h2 class="en">{{ product.en }}</h2>
                                 </div>
                                 <div class="intro">
-                                    <p class="mb-0">{{ product.des }}</p>
+                                    <p class="mb-0" v-html="product.des"></p>
                                 </div>
                             </div>
                         </div>
@@ -61,10 +61,10 @@ import 'swiper/swiper-bundle.css';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
 const products = ref([
-    { id: 1, image: '香燉嫩雞', name: '香燉嫩雞', en: 'chicken',  des: '單一肉源減少毛孩過敏機率，餐包添加蜂王胎、火龍果，提升抵抗力、促進腸道蠕動及平衡健康菌叢' },
-    { id: 2, image: '白帶魚雞肉', name: '白帶魚 & 雞肉', en: 'Hairtail & Chicken',  des: '單一肉源減少毛孩過敏機率，餐包添加蜂王胎、火龍果，提升抵抗力、促進腸道蠕動及平衡健康菌叢' },
-    { id: 3, image: '極鮮烏魚', name: '極鮮烏魚', en: 'mullet',  des: '單一肉源減少毛孩過敏機率，餐包添加蜂王胎、火龍果，提升抵抗力、促進腸道蠕動及平衡健康菌叢' },
-    { id: 4, image: '水針虱目魚', name: '水針 & 虱目魚', en: 'Needlefish & Milkfish',  des: '單一肉源減少毛孩過敏機率，餐包添加蜂王胎、火龍果，提升抵抗力、促進腸道蠕動及平衡健康菌叢' },
+    { id: 1, image: '香燉嫩雞', name: '香燉嫩雞', en: 'chicken',  des: '<b>單一肉源｜過敏食材OUT</b><br/>國產優質雞肉，高蛋白低脂，提供貓咪運動營養，寵物接受度 No.1' },
+    { id: 2, image: '白帶魚雞肉', name: '白帶魚 & 雞肉', en: 'Hairtail & Chicken',  des: '<b>單一肉源｜過敏食材OUT</b><br/>梓官漁會來源烏魚殼，油脂豐富，有益皮毛健康，喜歡海鮮的貓貓必吃' },
+    { id: 3, image: '極鮮烏魚', name: '極鮮烏魚', en: 'mullet',  des: '<b>雙重口味｜肉肉吃不膩</b><br/>新港漁會白帶魚及國產優質雞肉，富含 BCAA、Omega-3，一次享受海陸大餐' },
+    { id: 4, image: '水針虱目魚', name: '水針 & 虱目魚', en: 'Needlefish & Milkfish',  des: '<b>雙重口味｜肉肉吃不膩</b><br/>新港漁會水針（鶴鱵）及國產虱目魚，內含豐富不飽和脂肪酸，海味濃郁' },
 ])
 
 const paginationOptions = {

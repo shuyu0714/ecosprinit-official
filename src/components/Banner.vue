@@ -5,6 +5,10 @@
                 <img src="../assets/images/img/banner/img-banner1.jpg" class="img-fluid d-none d-md-block" densities="x1" alt="Eco Sprint 奔奔 果肉泥主食餐包，添加產銷履歷紅龍果及無毒蜂子" />
                 <img src="../assets/images/img/banner/img-banner1_mb.jpg" class="img-fluid ratio-mb d-md-none" densities="x1" alt="Eco Sprint 奔奔 果肉泥主食餐包，添加產銷履歷紅龍果及無毒蜂子" />
             </div>
+            <!-- <div>
+                <img src="../assets/images/img/banner/img-banner_嘖嘖募資最後倒數.jpg" class="img-fluid d-none d-md-block" densities="x1" alt="Eco Sprint 奔奔 果肉泥主食餐包，添加產銷履歷紅龍果及無毒蜂子" />
+                <img src="../assets/images/img/banner/img-banner1_mb.jpg" class="img-fluid ratio-mb d-md-none" densities="x1" alt="Eco Sprint 奔奔 果肉泥主食餐包，添加產銷履歷紅龍果及無毒蜂子" />
+            </div> -->
         </VSlickCarousel>
     </div>
 </template>
@@ -16,7 +20,7 @@ import { VSlickCarousel } from 'v-slick-carousel'
 const settings = {
   slidesToShow: 1,
   arrows: false,
-  draggable: false,
+//   draggable: false,
 }
 </script>
 

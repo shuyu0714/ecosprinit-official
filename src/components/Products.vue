@@ -3,7 +3,7 @@
         <div class="wrapper">
             <div class="mainProduct">
                 <swiper-container
-                    :autoplay="true"
+                    :autoplay="false"
                     :speed="500"
                     :loop="true"
                     :slides-per-view="1"

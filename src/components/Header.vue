@@ -12,15 +12,19 @@
                         </li>
                         <img src="../assets/images/icon/icon-slash.svg" class="slash" width="8" height="24" alt="" />
                         <li class="nav-item">
+                            <a class="nav-link" href="#nutritionfacts">營養成份</a>
+                        </li>
+                        <img src="../assets/images/icon/icon-slash.svg" class="slash" width="8" height="24" alt="" />
+                        <li class="nav-item">
                             <a class="nav-link active" href="#about">關於奔奔</a>
                         </li>
-                        <!-- <img src="../assets/images/icon/icon-slash.svg" class="slash" width="8" height="24" alt="" />
-                        <li class="nav-item">
-                            <a class="nav-link" href="#report">檢驗報告</a>
-                        </li> -->
                         <img src="../assets/images/icon/icon-slash.svg" class="slash" width="8" height="24" alt="" />
                         <li class="nav-item">
                             <a class="nav-link" href="#traceability">食材溯源</a>
+                        </li>
+                        <img src="../assets/images/icon/icon-slash.svg" class="slash" width="8" height="24" alt="" />
+                        <li class="nav-item">
+                            <a class="nav-link" href="#report">檢驗報告</a>
                         </li>
                     </ul>
                 </div>
@@ -68,12 +72,18 @@ header {
                     font-size: 14px;
                     padding: 0 14px;
                 }
+                @media screen and (max-width: 490px) {
+                    padding: 0 7px;
+                }
             }
         }
         .slash {
             @media screen and (max-width: 767px) {
                 width: 5px;
                 height: 13px;
+            }
+            @media screen and (max-width: 490px) {
+                display: none;
             }
         }
     }

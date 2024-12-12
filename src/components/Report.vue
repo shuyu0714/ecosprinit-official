@@ -1,6 +1,6 @@
 <template>
     <section class="d-flex justify-content-center" id="report">
-        <a class="d-flex justify-content-center" href="/" target="_blank" rel="noopener">
+        <a class="d-flex justify-content-center" href="https://drive.google.com/drive/folders/1O-UhfdiRDoG4QKKj8xUeZ583en3RuXfe" target="_blank" rel="noopener">
             <img class="img-fluid" src="../assets/images/img/img-report.png" alt="完整檢驗報告" title="完整檢驗報告" />
         </a>
         <div class="holder"></div>
